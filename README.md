@@ -15,15 +15,15 @@ This program contains the following features:
 
 # INSTALLATION
  1. To install this program, clone the repository. Copy this command to your terminal :
-  ``` sh git clone git@github.com:eddymwaniki/Phase-3-Final-Project.git```
+  ```  git clone git@github.com:eddymwaniki/Phase-3-Final-Project.git```
  2. Install the programs dependencies:
-   ``` sh pipenv install ```
+   ```  pipenv install ```
  3. Enter into the python shell:
-  ``` sh pipenv shell```
+  ```  pipenv shell```
 
 # USAGE
  To use this program, run the following command on your terminal:
-  ``` sh python cli.py ```
+  ```  python cli.py ```
  The following menu will appear on the terminal:
    Spotify Playlist Manager
  1. Create your playlist
