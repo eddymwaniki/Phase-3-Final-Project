@@ -63,7 +63,7 @@ def add_song():
     album = input("Enter the song's album: ")
     
     song = Song.create_song(title, artist, album, playlist_id)
-    print(f"{song.title} added to playlist {song.playlist_id} successfully!")
+    print(f"{song.title} added to Playlist {song.playlist_id} successfully!")
 
 def view_all_playlists():
     playlists = Playlist.get_all_playlists()
