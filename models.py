@@ -53,31 +53,20 @@ class Song(Base):
     title = Column(String())
     artist = Column(String())
     album = Column(String())
-    genre = Column(String())
-    runtime = Column(Integer())
-    date_released = Column(DateTime())
     playlist_id = Column(Integer(), ForeignKey("playlists.id"))
 
     playlist = relationship("Playlist", back_populates = "songs")
 
     def __repr__(self):
-        minutes, seconds = divmod(self.runtime, 60) 
-        return f"Song : {self.id} : {self.title} | Artist : {self.artist} | Album : {self.album} | Runtime : {minutes}:{seconds:02d}"
+        return f"Song : {self.id} : {self.title} | Artist : {self.artist} | Album : {self.album} "
 
-    @property
-    def formatted_runtime(self) :
-        minutes, seconds = divmod(self.runtime, 60)
-        return f"{minutes}:{seconds:02d}"
 
     @classmethod 
-    def create_song(cls, title, artist, album, genre, runtime, date_released, playlist_id):
+    def create_song(cls, title, artist, album, playlist_id):
         song = cls(
             title = title,
             artist = artist,
             album = album,
-            genre = genre,
-            runtime = runtime,
-            date_released = date_released,
             playlist_id = playlist_id,
         )  
         session.add(song)
@@ -97,8 +86,7 @@ class Song(Base):
         return session.query(cls).filter(
             (cls.title.ilike(f"%{query}%")) |
             (cls.artist.ilike(f"%{query}%")) |
-            (cls.album.ilike(f"%{query}%")) |
-            (cls.genre.ilike(f"%{query}%"))
+            (cls.album.ilike(f"%{query}%")) 
         ).all()
 
     def delete_song(self) :
