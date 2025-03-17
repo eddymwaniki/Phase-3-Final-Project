@@ -19,7 +19,7 @@ This program contains the following features:
  2. Enter into the project's directory, copy and paste the following command in your terminal:
   ```cd Phase-3-Final-Project/```
  3. Install the programs dependencies:
-   ```pipenv install ```
+   ```pipenv install```
  4. Enter into the python shell:
   ```pipenv shell```
 
