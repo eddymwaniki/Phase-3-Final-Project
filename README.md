@@ -14,16 +14,18 @@ This program contains the following features:
  10. Leave the application on the users command
 
 # INSTALLATION
- 1. To install this program, clone the repository. Copy this command to your terminal :
-  ```  git clone git@github.com:eddymwaniki/Phase-3-Final-Project.git```
- 2. Install the programs dependencies:
-   ```  pipenv install ```
- 3. Enter into the python shell:
-  ```  pipenv shell```
+ 1. To install this program, clone the repository. Copy this command to your terminal : 
+  ```git clone git@github.com:eddymwaniki/Phase-3-Final-Project.git```
+ 2. Enter into the project's directory, copy and paste the following command in your terminal:
+  ```cd Phase-3-Final-Project/```
+ 3. Install the programs dependencies:
+   ```pipenv install ```
+ 4. Enter into the python shell:
+  ```pipenv shell```
 
 # USAGE
  To use this program, run the following command on your terminal:
-  ```  python cli.py ```
+  ```python cli.py```
  The following menu will appear on the terminal:
    Spotify Playlist Manager
  1. Create your playlist
