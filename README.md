@@ -23,6 +23,9 @@ This program contains the following features:
  4. Enter into the python shell:
   ```pipenv shell```
 
+# PLEASE NOTE
+ Due to the length of cli menu, some user validation messages may not be seen. Be sure to elongate your terminal to be able to see the user validation    messages.   
+
 # USAGE
  To use this program, run the following command on your terminal:
   ```python cli.py```
